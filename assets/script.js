@@ -26,11 +26,15 @@ let arrow_right = document.querySelector(".arrow_right")
 arrow_right.addEventListener("click", ()=> {
 	console.log("suivant")
   });
-
+// Create Dots
   let dotsDiv=document.querySelector(".dots");
-  for (var i = 0; i < slides.length; i++) {
+  for ( i = 0; i < slides.length; i++) {
 	let dot=document.createElement('span');
 	dot.classList.add("dot");
-	dotsDiv.appendChild(dot);
 	
-	}
+	dotsDiv.appendChild(dot);
+	let slideIndex=0;
+	if(i===slideIndex ){
+	 dot.classList.add('dot_selected');}
+}
+	
