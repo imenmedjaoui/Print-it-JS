@@ -19,11 +19,18 @@ const slides = [
 
 let arrow_left = document.querySelector(".arrow_left")
 arrow_left.addEventListener("click", function() {
-	
-	console.log("précédent");
+	console.log("précédent")
   });
 
 let arrow_right = document.querySelector(".arrow_right")
-arrow_right.addEventListener("click", function() {
-	console.log("suivant");
+arrow_right.addEventListener("click", ()=> {
+	console.log("suivant")
   });
+
+  let dotsDiv=document.querySelector(".dots");
+  for (var i = 0; i < slides.length; i++) {
+	let dot=document.createElement('span');
+	dot.classList.add("dot");
+	dotsDiv.appendChild(dot);
+	
+	}
